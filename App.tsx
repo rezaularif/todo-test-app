@@ -88,13 +88,13 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
       <KeyboardAvoidingView
         style={styles.container}
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
       >
         <View style={styles.header}>
-          <Text style={styles.title}>Todo</Text>
+          <Text style={styles.title}>My Tasks</Text>
           <Text style={styles.subtitle}>
             {tasks.length === 0
               ? 'No tasks yet'
@@ -163,26 +163,32 @@ export default function App() {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#F9FAFB',
+    backgroundColor: '#7C5CFF',
   },
   container: {
     flex: 1,
     paddingHorizontal: 20,
-    paddingTop: 12,
+    paddingTop: 0,
+    backgroundColor: '#F9FAFB',
   },
   header: {
+    marginHorizontal: -20,
     marginBottom: 16,
+    paddingHorizontal: 20,
+    paddingTop: 12,
+    paddingBottom: 20,
+    backgroundColor: '#7C5CFF',
   },
   title: {
     fontSize: 32,
     fontWeight: '700',
-    color: '#111827',
+    color: '#FFFFFF',
     letterSpacing: -0.5,
   },
   subtitle: {
     marginTop: 2,
     fontSize: 14,
-    color: '#6B7280',
+    color: 'rgba(255, 255, 255, 0.85)',
   },
   inputRow: {
     flexDirection: 'row',
