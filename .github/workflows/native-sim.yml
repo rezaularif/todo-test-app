@@ -615,6 +615,7 @@ jobs:
           disown
           echo "repo sync loop started — pushes to the branch live-reload the simulator"
 
+
       - name: Report app installed
         if: inputs.mode == 'build' || inputs.mode == 'app'
         run: |
