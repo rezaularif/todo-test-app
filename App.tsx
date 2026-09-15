@@ -163,7 +163,7 @@ export default function App() {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#7C5CFF',
+    backgroundColor: '#DC2626',
   },
   container: {
     flex: 1,
@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 12,
     paddingBottom: 20,
-    backgroundColor: '#7C5CFF',
+    backgroundColor: '#DC2626',
   },
   title: {
     fontSize: 32,
